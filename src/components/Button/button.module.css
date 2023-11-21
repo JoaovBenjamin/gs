@@ -1,0 +1,16 @@
+.button_nav{
+    color: white;
+    background-color: RGB(128, 128, 0);
+    border: 1px solid greenyellow;
+    padding: 8px;
+    border-radius: 8px;
+    width: 60px;
+}
+
+.button_nav2{
+    color: white;
+    background-color: RGB(128, 128, 0);
+    border: 1px solid greenyellow;
+    padding: 8px;
+    border-radius: 8px;
+}
