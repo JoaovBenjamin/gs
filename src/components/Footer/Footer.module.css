@@ -1,10 +1,30 @@
+
 .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 12px;
-    background-color:RGB(64, 224, 208);
+    background-color:RGB(152, 255, 152);
+
+    @media (min-width: 926px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+        background-color:RGB(152, 255, 152);
+
+    }
+
+    @media (min-width:1060px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 28px;
+        background-color:RGB(152, 255, 152);
+    }
 }
 
 .footer__membros{

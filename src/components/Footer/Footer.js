@@ -3,6 +3,7 @@ import styles from "./Footer.module.css"
 export default function Footer(){
     return(
         <>
+            <hr className={styles.linha}></hr>        
             <footer className={styles.footer}>
                 <ul className={styles.footer__membros}>
                     <li className={styles.footer_membros__item}>João Vitor Vicente</li>
