@@ -3,7 +3,7 @@ import ButtonNav from "../Button/button1Nav"
 import ButtonNav2 from "../Button/button2Nav"
 import Image from "next/image"
 
-export default async function Nav(){
+export default  function Nav(){
     return(
         <>
             <nav className={styles.nav}>

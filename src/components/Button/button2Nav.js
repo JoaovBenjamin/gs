@@ -1,9 +1,9 @@
 import styles from "./button.module.css"
 
-export default async function ButtonNav2(){
+export default  function ButtonNav2(){
     return(
         <>
-            <button className={styles.button_nav2}>Cadastrar</button>
+            <button className={styles.button_nav2}><a href="/Cadastro">Cadastro</a></button>
         </>
     )
 }

@@ -3,7 +3,7 @@ import Nav from "../Navegação/nav"
 import Image from "next/image"
 import Footer from "../Footer/Footer"
 
-export default async function HomePage(){
+export default function HomePage(){
  return(
     <>
         <Nav></Nav>
