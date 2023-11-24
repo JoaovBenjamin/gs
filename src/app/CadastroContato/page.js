@@ -1,9 +1,9 @@
-
+import CadastroContatoPaciente from "@/components/CadastroContato/CadastroContato"
 
 export default function CadastroContato(){
     return(
         <>
-        <h1>Lal</h1>
+        <CadastroContatoPaciente></CadastroContatoPaciente>
         </>
     )
 }
