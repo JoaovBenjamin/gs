@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+}
+
+.container__h1{
+    padding: 1em;
+}
+
+.container__link{
+    text-decoration: none;
+}

@@ -1,5 +1,6 @@
 "use client"
 
+import styles from "../../styles/cadastros.module.css"
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -35,19 +36,23 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleLogin}>
+    <>
+      <section className={styles.container}>
+          <h1 className={styles.container__titulo}>Login</h1>
+          
       <label>
-        Usuário:
-        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-      </label>
+      <p className={styles.container__texto}>Usuario: </p>
+            <input className={styles.container__input} type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+          </label>
       <br />
       <label>
-        Senha:
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <p className={styles.container__texto}>Senha: </p>:
+            <input className={styles.container__input} type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
       </label>
       <br />
-      <button type="submit">Login</button>
-    </form>
+      <button className={styles.container__button} onClick={handleLogin} type="submit">Login</button>
+      </section>
+    </>
   );
 };
 
