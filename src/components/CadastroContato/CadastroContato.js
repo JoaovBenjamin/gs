@@ -1,6 +1,8 @@
 "use client"
+import styles from "../../styles/cadastros.module.css"
 import handleCadastroContato from "@/services/CadastroContato/CadastroContato";
 import { useState } from "react";
+import Footer from "../Footer/Footer";
 
 
 const CadastroContatoPaciente = () => {
@@ -27,27 +29,31 @@ const CadastroContatoPaciente = () => {
       };
       
     return (
-        <div>
-          <h1>Cadastro de Contato com o Paciente</h1>
+        <>
+         <section className={styles.container}>
+          <h1 className={styles.container__titulo}>Cadastro de Contato de Emergencia para o Paciente</h1>
           <label>
-            Nome:
-            <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
+          <p className={styles.container__texto}>Nome: </p>            <input className={styles.container__input} type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
           </label>
           <br />
           <label>
-            Número:
-            <input type="text" value={telefone} onChange={(e) => setTelefone(e.target.value)} />
+          <p className={styles.container__texto}>Numero:  </p>
+            <input className={styles.container__input}type="text" value={telefone} onChange={(e) => setTelefone(e.target.value)} />
           </label>
           <br />
           <label>
-            Email:
-            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <p className={styles.container__texto}>Email: </p>
+            <input className={styles.container__input} type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
           </label>
           <br />
-          <button onClick={handleClick}>Cadastrar Paciente</button>
-          {mensagem && <p>{mensagem}</p>}
+          <button className={styles.container__button} onClick={handleClick}>Cadastrar Contato</button>
+          {mensagem && <p className={styles.mensagem}>{mensagem} <br></br> <a className={styles.mensagem__link} href="/CadastroPlanoSaude">Clique aqui para continar</a></p>
+                        
+                      }
 
-        </div>
+        </section>
+        <Footer></Footer>
+        </>
       )
 
 }

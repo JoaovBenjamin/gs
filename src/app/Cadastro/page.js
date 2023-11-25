@@ -1,4 +1,4 @@
-import CadastroPaciente from "@/components/Cadastro/CadastroPaciente";
+import CadastroPaciente from "@/components/CadastroPaciente/CadastroPaciente";
 
 export default function Cadastro(){
     return(

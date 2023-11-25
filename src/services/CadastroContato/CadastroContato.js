@@ -6,7 +6,7 @@ const handleCadastroContato = async (nome, telefone, email) => {
       console.log('Resposta da API (Cadastro Contato Paciente):', response.data);
     
     } catch (error) {
-      console.error('Erro ao cadastrar paciente:', error);
+      console.error('Erro ao cadastrar contato do paciente:', error);
     }
   };
 

@@ -25,6 +25,15 @@
         gap: 28px;
         background-color:RGB(152, 255, 152);
     }
+
+    @media (min-width:1212px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 80px;
+        background-color:RGB(152, 255, 152);
+    }
 }
 
 .footer__membros{

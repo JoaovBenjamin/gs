@@ -1,0 +1,44 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    flex-direction: column; 
+    background-color:RGB(152, 255, 152); 
+
+}
+
+.container__titulo{
+    padding: 1em;
+    margin-top: 5em;
+    color:  RGB(0, 0, 128) ;
+}
+
+.container__texto{
+    margin-bottom: 20px;
+}
+
+.container__input{
+    border: 1px solid  RGB(128, 128, 0);
+    border-radius: 8px;
+    padding: 8;
+}
+
+.container__button{
+    background-color: RGB(128, 128, 0);
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.mensagem{
+    font-size: 12px;
+}
+
+.mensagem__link{
+    text-decoration: none;
+    font-size: 12px;
+    color: blue;
+}
