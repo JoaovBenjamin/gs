@@ -3,7 +3,7 @@ import styles from "./button.module.css"
 export default  function ButtonNav(){
     return(
         <>
-         <button className={styles.button_nav}>Login</button>
+         <button className={styles.button_nav}><a className={styles.link}>Login</a></button>
         </>
     )
 }

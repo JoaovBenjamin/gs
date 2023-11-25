@@ -1,12 +1,16 @@
 "use client"
-
+// importando os arquivos necessarios
 import styles from "../../styles/cadastros.module.css"
 import React, { useState } from 'react';
 import axios from 'axios';
+import Footer from "../Footer/Footer";
 
 const LoginForm = () => {
+  //Criando os estados para armazenar a api
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -33,6 +37,8 @@ const LoginForm = () => {
       // Lógica para tratar erros, por exemplo, exibir uma mensagem de erro
       console.error('Erro ao fazer login:', error.message);
     }
+
+
   };
 
   return (
@@ -51,7 +57,9 @@ const LoginForm = () => {
       </label>
       <br />
       <button className={styles.container__button} onClick={handleLogin} type="submit">Login</button>
+
       </section>
+      <Footer></Footer>
     </>
   );
 };
