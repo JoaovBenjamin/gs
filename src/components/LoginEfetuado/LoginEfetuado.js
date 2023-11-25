@@ -1,7 +1,9 @@
+//importando bibliotecas next e estilos
 import styles from "../Home/Home.module.css"
 import Image from "next/image"
 import Footer from "../Footer/Footer"
 
+//Montando meu componente
 export default function LoginEfetuado(){
     return(
         <>

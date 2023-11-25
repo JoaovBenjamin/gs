@@ -1,8 +1,10 @@
+//importando css, bibliotecas next e componentes
 import styles from "./Home.module.css"
 import Nav from "../Navegação/nav"
 import Image from "next/image"
 import Footer from "../Footer/Footer"
 
+//Montando meu componente
 export default function HomePage(){
  return(
     <>

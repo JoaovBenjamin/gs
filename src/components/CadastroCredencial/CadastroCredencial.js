@@ -1,3 +1,5 @@
+//Importando meus arquivos e o use client
+
 "use client"
 import styles from "../../styles/cadastros.module.css"
 import handleCadastroCredencial from "@/services/CadastroCredencial/Cadastro"
@@ -5,22 +7,30 @@ import { useState } from "react"
 import Footer from "../Footer/Footer"
 
 const CadastroCredencial = () => {
+      //Armazenando estado e criando const
+
     const [usario, setUsuario] = useState("")
     const [senha, setSenha] = useState("")
     const [mensagem, setMensagem] = useState('');
 
+  //Exportando minha api e invocando os objetos
 
     const handleClick = async () => {
         const usarioCadastrado = usario
         const senhaCadastrada = senha
 
         await handleCadastroCredencial(usarioCadastrado, senhaCadastrada)
+                //Mensagem de acerto
+
         setMensagem('Credenciais cadastrada com sucesso');
 
+                //Deixando vazios os inputs
 
         setUsuario('')
         setSenha('')
     }
+
+          //Criando meu componente
 
     return(
       <>

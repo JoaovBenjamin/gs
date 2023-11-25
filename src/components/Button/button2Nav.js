@@ -1,5 +1,7 @@
+// Importando os estilos
 import styles from "./button.module.css"
 
+//Criando componente
 export default  function ButtonNav2(){
     return(
         <>

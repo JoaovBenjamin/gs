@@ -1,8 +1,10 @@
+//Importando meus componentes e css
 import styles from "./Projeto.module.css"
 import Nav from "../Navegação/nav"
 import Footer from "../Footer/Footer"
 import Image from "next/image"
 
+//Criando meu componente
 export default function Projeto(){
     return(
         <>

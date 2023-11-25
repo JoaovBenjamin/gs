@@ -1,8 +1,10 @@
+//Imporntando estilos, bibloetaca next e componentes
 import styles from "./nav.module.css"
 import ButtonNav from "../Button/button1Nav"
 import ButtonNav2 from "../Button/button2Nav"
 import Image from "next/image"
 
+//Criando meu componente
 export default  function Nav(){
     return(
         <>

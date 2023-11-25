@@ -1,3 +1,5 @@
+//Importando meus arquivos e o use client
+
 "use client"
 import styles from "../../styles/cadastros.module.css"
 import handleCadastroPaciente from "@/services/Cadastro/CadastroPaciente";
@@ -7,12 +9,15 @@ import Footer from "../Footer/Footer";
 
 
 const CadastroPaciente = () => {
+        //Armazenando estado e criando const
+
     const [nome, setNome] = useState('');
     const [telefone, setTelefone] = useState('');
     const [idade, setIdade] = useState('');
     const [mensagem, setMensagem] = useState('');
 
-   
+     //Exportando minha api e invocando os objetos
+
   
     const handleClick = async () => {
         const nomePaciente = nome;
@@ -20,7 +25,11 @@ const CadastroPaciente = () => {
         const idadePaciente = idade;
         await handleCadastroPaciente(nomePaciente, telefonePaciente, idadePaciente);
 
+                        //Mensagem de acerto
+
         setMensagem('Cliente cadastrado com sucesso!');
+
+                        //Deixando vazios os inputs
 
 
         setNome('');
@@ -28,6 +37,9 @@ const CadastroPaciente = () => {
         setIdade('');
         
       };
+      
+                //Criando meu componente
+
       
     return (
        <>

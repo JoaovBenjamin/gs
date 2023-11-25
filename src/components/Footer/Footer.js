@@ -1,5 +1,7 @@
+//importando meus estilos
 import styles from "./Footer.module.css"
 
+//Criando os meus componentes
 export default function Footer(){
     return(
         <>
