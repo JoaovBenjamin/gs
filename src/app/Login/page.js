@@ -1,9 +1,9 @@
-import LoginForm from "@/components/Login/Login";
+import LoginEfetuado from "@/components/LoginEfetuado/LoginEfetuado"
 
 export default function Login(){
     return(
         <>
-        <LoginForm></LoginForm>
+        <LoginEfetuado></LoginEfetuado>
         </>
     )
 }
