@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Esse é um projeto Next.js + React
 
-## Getting Started
+Para inicializar baixe primeiro o node_modules com o : npm install
 
-First, run the development server:
+Para vizualizar a pagina digite o : npm run dev
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Projeto:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O nosso projeto constitui em um device que vai captar todas as assinaturas e dados vitais do clientes,que vai estar sendo observado 24h pela equipe HapVida, caso ele passe mal vamos entrar em contato com o cliente dependo do plano de saude dele detalhado no nosso BackLog. Queremos auxialar com nossa IA para alertar o médico  Nosso lema é digitalizar para aproximar.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Melhorias:
+-Montar o nosso device que vai analisar os dados vitais
+-Montar uma pagina apenas para medico para ele ficar de olho no paciente no dia a dia, para melhorar o relacionamento paciente e medico.
+-Conectar nossa ia que já esta consumindo API, para ajudar o medico a analisar os dados do paciente.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Dados:
 
-## Learn More
+Contato - 'contato01@teste.com','Luiz Amorim', '(11) 11111-1111' 'contato02@teste.com','Armando Olindo','(22) 22222-1111';
 
-To learn more about Next.js, take a look at the following resources:
+Credencial - 'x132','123gsdfs', 'xxxxasdsf','asdafg1'
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Paciente - 'Valter Amores',78,'(33)98778-0000',1,1,1 'Paulo Santo Silva', 55,'(33)99999-0000',1,2,2
